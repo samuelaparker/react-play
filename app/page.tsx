@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Silkscreen } from "next/font/google";
 
 export default function Home() {
   const [bgColorState, setBGColor] = useState("");
@@ -54,6 +53,14 @@ export default function Home() {
       </div>
       <div style={{ color: textColorState }}>
         Click anywhere to reset background color to white.
+      </div>
+      <div style={{ color: textColorState }}>
+        <div className="mt-24">
+          <p className="font-silkscreen text-9xl">Silkscreen font</p>
+        </div>
+        <div className="mt-24">
+          <p className="font-rubikPuddles text-9xl">Rubik Puddles font</p>
+        </div>
       </div>
     </main>
   );
