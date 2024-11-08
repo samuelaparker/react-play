@@ -31,6 +31,9 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center p-24`}
       style={{ backgroundColor: bgColorState }}
     >
+      <div style={{ color: textColorState }} className="p-8">
+        Click anywhere to reset background color to white.
+      </div>
       <div>
         <button
           onClick={buttonClick_1}
@@ -51,9 +54,7 @@ export default function Home() {
           CLICK
         </button>
       </div>
-      <div style={{ color: textColorState }}>
-        Click anywhere to reset background color to white.
-      </div>
+
       <div style={{ color: textColorState }}>
         <div className="mt-24">
           <p className="font-silkscreen text-9xl">Silkscreen font</p>
