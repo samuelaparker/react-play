@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@/components/ui/button";
 
 export default function page() {
   return (
@@ -13,6 +14,7 @@ export default function page() {
               page
             </div>
           ))}
+          <Button />
         </div>
       </div>
     </div>
