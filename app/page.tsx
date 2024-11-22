@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [bgColorState, setBGColor] = useState("");
@@ -24,7 +24,14 @@ export default function Home() {
     setBGColor("white");
     setTextColor("black");
   };
-  document.body.addEventListener("click", bodyColor);
+
+  useEffect(() => {
+    document.body.addEventListener("click", bodyColor);
+
+    return () => {
+      document.body.removeEventListener("click", bodyColor);
+    };
+  }, []);
 
   return (
     <main
