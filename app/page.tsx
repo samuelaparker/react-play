@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [bgColorState, setBGColor] = useState("");
@@ -69,6 +70,9 @@ export default function Home() {
         <div className="mt-24">
           <p className="font-rubikPuddles text-9xl">Rubik Puddles font</p>
         </div>
+      </div>
+      <div className="border-4 border-blue-700 mt-16 p-4 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700 hover:text-white hover:shadow-lg cursor-pointer">
+        <Link href="/play-2">shadcn / ui playground</Link>
       </div>
     </main>
   );
